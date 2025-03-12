@@ -11,20 +11,45 @@
 ✅ Modular arithmetic (useful for cryptography and RSA decryption)  
 ✅ Number theory operations (e.g., gcd, modular inverses, primality testing)  
 
+### Example Using in Python
+```bash
+import gmpy2
+
+# Define two large numbers
+a = gmpy2.mpz(12345678901234567890)
+b = gmpy2.mpz(9876543210987654321)
+
+# Perfom arithmaetic operations
+print("Addition:", gmpy2.add(a, b))
+print("Multiplication:", gmpy2.mul(a, b))
+
+# Compute modular inverse
+mod_inverse = gmpy2.invert(3, 7) # 3^(-1) mod 7
+print("Modular Inverse of 3 mod 7:", mod_inverse)
+```
+
 ---
 
 ## Step 1: Setting Up the Script
-📌 **Create a directory and script file:**
+-**I Recommend creating a directory and a script file.**
+-**TO create the scipt file use vim or nano.** 
+-**I originally started with vim but changed to nano.**
+
+**Directory and Script file:**
 
 ```bash
-mkdir rsa_decryption
-cd rsa_decryption
-nano decrypt_rsa.py
+#This creates the Directory. 
+mkdir PythonCode
+#This takes you to Pythoncode Directory.
+cd PythonCode
+#This creates Script file. 
+nano decrypt.py. 
 ```
 
 ---
 
 ## Step 2: Installing gmpy2
+You can install `gmpy2` with the following prompt: 
 If `gmpy2` is not installed, you might encounter an error.  
 
 🚨 **Error:**
